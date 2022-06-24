@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista para assistir</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body class="pb-5">
+    <header class="sticky-top bg-white">
+      <div class="py-3 container border-bottom">
+        <div class="row">
+          <div class="col">
+            <h1>Lista para assistir</h1>
+          </div>
+
+          <div class="col-auto">
+            <a
+              href="./modal-acionar.html"
+              class="btn btn-primary btn-lg"
+              id="open-add-modal"
+            >
+              Adicionar
+              <i class="bi bi-plus-lg"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="py-5 container">
+        <input
+          type="text"
+          class="form-control form-control-lg mb-5"
+          id="search"
+          placeholder="O que você procura?"
+        />
+
+        <div
+          class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-4 g-4"
+        >
+          <div class="col">
+            <div class="card text-white shadow">
+              <img
+                src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/wd7b4Nv9QBHDTIjc2m7sr0IUMoh.jpg"
+                class="card-img opacity-25"
+                alt="Batman"
+              />
+              <div
+                class="card-img-overlay bg-dark bg-opacity-50 d-flex overflow-hidden"
+              >
+                <form action="./lista.html" class="w-100 overflow-auto">
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Nome</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Filme ou série"
+                      value="Batman"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="trailer-link" class="form-label">
+                      Link do Trailer
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="trailer-link"
+                      placeholder="URL do trailer"
+                      value="https://www.youtube.com/watch?v=rsQEor4y2hg"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="poster-link" class="form-label">
+                      Link do Poster
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="poster-link"
+                      placeholder="URL de uma imagem"
+                      value="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/wd7b4Nv9QBHDTIjc2m7sr0IUMoh.jpg"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="synopsis" class="form-label"> Sinopse </label>
+                    <textarea class="form-control" id="synopsis" rows="3">
+Após dois anos espreitando as ruas como Batman, Bruce Wayne se encontra nas profundezas mais sombrias de Gotham City. Com poucos aliados confiáveis, o vigilante solitário se estabelece como a personificação da vingança para a população.</textarea
+                    >
+                  </div>
+                  <div class="d-flex justify-content-end">
+                    <a
+                      href="./lista.html"
+                      type="button"
+                      class="btn btn-secondary btn-sm"
+                      data-bs-dismiss="modal"
+                    >
+                      Cancelar
+                      <i class="bi bi-x-circle"></i>
+                    </a>
+                    <button type="submit" class="btn btn-primary btn-sm">
+                      Salvar
+                      <i class="bi bi-plus-lg"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+
+              <span
+                class="badge position-absolute top-0 start-100 translate-middle bg-danger"
+              >
+                9
+              </span>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card bg-dark text-white shadow">
+              <img
+                src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/f4SvCKIUrC2cDR7Xo4k1kaGAqQ2.jpg"
+                class="card-img"
+                alt="Sonic 2: O Filme"
+              />
+              <div
+                class="card-img-overlay bg-dark bg-opacity-75 d-flex overflow-hidden"
+              >
+                <div
+                  class="card-contents flex-fill d-flex flex-column justify-content-end"
+                >
+                  <h5 class="card-title">Sonic 2: O Filme</h5>
+                  <p class="card-text">
+                    Depois de se estabelecer em Green Hills, Sonic está pronto
+                    para mais liberdade e deixar sua marca como um herói, e Tom
+                    e Maddie concordam em deixá-lo em casa enquanto vão de
+                    férias. Mas, assim que eles se foram, Dr. Robotnik volta,
+                    desta vez com um novo parceiro, Knuckles, em busca de uma
+                    esmeralda que tem o poder de construir e destruir
+                    civilizações. Sonic se une a um novo companheiro, Tails, e
+                    juntos eles embarcam em uma jornada para encontrar a
+                    esmeralda antes que ela caia nas mãos erradas.
+                  </p>
+                  <p class="card-text actions">
+                    <a
+                      href="./modal-ver-mais.html"
+                      class="btn btn-primary btn-sm stretched-link"
+                    >
+                      Ver mais
+                      <i class="bi bi-eye"></i>
+                    </a>
+                    <a
+                      href="./editar.html"
+                      class="btn btn-success btn-sm position-relative"
+                    >
+                      Editar
+                      <i class="bi bi-pencil"></i>
+                    </a>
+                    <a href="#" class="btn btn-danger btn-sm position-relative">
+                      Remover
+                      <i class="bi bi-trash"></i>
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+              <span
+                class="badge position-absolute top-0 start-100 translate-middle bg-danger"
+              >
+                7
+              </span>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card bg-dark text-white shadow">
+              <img
+                src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/tkc7AVyUoG9VEeDvukN0TVqa24C.jpg"
+                class="card-img"
+                alt="Cavaleiro da Lua"
+              />
+              <div
+                class="card-img-overlay bg-dark bg-opacity-75 d-flex overflow-hidden"
+              >
+                <div
+                  class="card-contents flex-fill d-flex flex-column justify-content-end"
+                >
+                  <h5 class="card-title">Cavaleiro da Lua</h5>
+                  <p class="card-text">
+                    A série acompanha Steven Grant, um gentil e educado
+                    funcionário de uma loja de souvenir, que é atormentado com
+                    apagões e memórias de outra vida. Steven descobre que tem
+                    transtorno dissociativo de identidade e divide o corpo com o
+                    mercenário Marc Spector. À medida que os inimigos de
+                    Steven/Marc se voltam para eles, ambos devem navegar em suas
+                    complexas identidades enquanto mergulham em um mistério
+                    mortal entre os poderosos deuses do Egito.
+                  </p>
+                  <p class="card-text actions">
+                    <a
+                      href="./modal-ver-mais.html"
+                      class="btn btn-primary btn-sm stretched-link"
+                    >
+                      Ver mais
+                      <i class="bi bi-eye"></i>
+                    </a>
+                    <a
+                      href="./editar.html"
+                      class="btn btn-success btn-sm position-relative"
+                    >
+                      Editar
+                      <i class="bi bi-pencil"></i>
+                    </a>
+                    <a href="#" class="btn btn-danger btn-sm position-relative">
+                      Remover
+                      <i class="bi bi-trash"></i>
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+              <span
+                class="badge position-absolute top-0 start-100 translate-middle bg-danger"
+              >
+                8
+              </span>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card bg-dark text-white shadow">
+              <img
+                src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/uKYUR8GPkKRCksczYDJb3pwZauo.jpg"
+                class="card-img"
+                alt="Stranger Things"
+              />
+              <div
+                class="card-img-overlay bg-dark bg-opacity-75 d-flex overflow-hidden"
+              >
+                <div
+                  class="card-contents flex-fill d-flex flex-column justify-content-end"
+                >
+                  <h5 class="card-title">Stranger Things</h5>
+                  <p class="card-text">
+                    Quando um garoto desaparece, a cidade toda participa nas
+                    buscas. Mas o que encontram são segredos, forças
+                    sobrenaturais e uma menina.
+                  </p>
+                  <p class="card-text actions">
+                    <a
+                      href="./modal-ver-mais.html"
+                      class="btn btn-primary btn-sm stretched-link"
+                    >
+                      Ver mais
+                      <i class="bi bi-eye"></i>
+                    </a>
+                    <a
+                      href="./editar.html"
+                      class="btn btn-success btn-sm position-relative"
+                    >
+                      Editar
+                      <i class="bi bi-pencil"></i>
+                    </a>
+                    <a href="#" class="btn btn-danger btn-sm position-relative">
+                      Remover
+                      <i class="bi bi-trash"></i>
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+              <span
+                class="badge position-absolute top-0 start-0 translate-middle bg-info p-2 rounded-circle border border-light"
+              >
+              </span>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card bg-dark text-white shadow">
+              <img
+                src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/4j0PNHkMr5ax3IA8tjtxcmPU3QT.jpg"
+                class="card-img"
+                alt="Encanto"
+              />
+              <div
+                class="card-img-overlay bg-dark bg-opacity-75 d-flex overflow-hidden"
+              >
+                <div
+                  class="card-contents flex-fill d-flex flex-column justify-content-end"
+                >
+                  <h5 class="card-title">Encanto</h5>
+                  <p class="card-text">
+                    Uma garota chamada Mirabel Madrigal cresce como o único
+                    membro não mágico de sua família, que vivem escondidos em
+                    uma vibrante casa encantada nas montanhas da Colômbia.
+                  </p>
+                  <p class="card-text actions">
+                    <a
+                      href="./modal-ver-mais.html"
+                      class="btn btn-primary btn-sm stretched-link"
+                    >
+                      Ver mais
+                      <i class="bi bi-eye"></i>
+                    </a>
+                    <a
+                      href="./editar.html"
+                      class="btn btn-success btn-sm position-relative"
+                    >
+                      Editar
+                      <i class="bi bi-pencil"></i>
+                    </a>
+                    <a href="#" class="btn btn-danger btn-sm position-relative">
+                      Remover
+                      <i class="bi bi-trash"></i>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card bg-dark text-white shadow">
+              <img
+                src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/fVzXp3NwovUlLe7fvoRynCmBPNc.jpg"
+                class="card-img"
+                alt="Homem-Aranha: Sem Volta Para Casa"
+              />
+              <div
+                class="card-img-overlay bg-dark bg-opacity-75 d-flex overflow-hidden"
+              >
+                <div
+                  class="card-contents flex-fill d-flex flex-column justify-content-end"
+                >
+                  <h5 class="card-title">Homem-Aranha: Sem Volta Para Casa</h5>
+                  <p class="card-text">
+                    Peter Parker é desmascarado e não consegue mais separar sua
+                    vida normal dos grandes riscos de ser um super-herói. Quando
+                    ele pede ajuda ao Doutor Estranho, os riscos se tornam ainda
+                    mais perigosos, e o forçam a descobrir o que realmente
+                    significa ser o Homem-Aranha...
+                  </p>
+                  <p class="card-text actions">
+                    <a
+                      href="./modal-ver-mais.html"
+                      class="btn btn-primary btn-sm stretched-link"
+                    >
+                      Ver mais
+                      <i class="bi bi-eye"></i>
+                    </a>
+                    <a
+                      href="./editar.html"
+                      class="btn btn-success btn-sm position-relative"
+                    >
+                      Editar
+                      <i class="bi bi-pencil"></i>
+                    </a>
+                    <a href="#" class="btn btn-danger btn-sm position-relative">
+                      Remover
+                      <i class="bi bi-trash"></i>
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+              <span
+                class="badge position-absolute top-0 start-100 translate-middle bg-danger"
+              >
+                10
+              </span>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card bg-dark text-white shadow">
+              <img
+                src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vaGYks5lnsWv9cD8mbQ3W5fAzPr.jpg"
+                class="card-img"
+                alt="Adão Negro"
+              />
+              <div
+                class="card-img-overlay bg-dark bg-opacity-75 d-flex overflow-hidden"
+              >
+                <div
+                  class="card-contents flex-fill d-flex flex-column justify-content-end"
+                >
+                  <h5 class="card-title">Adão Negro</h5>
+                  <p class="card-text">
+                    Quase 5.000 anos depois de ter sido concedido com os poderes
+                    onipotentes dos deuses egípcios - e de ter sido preso, -
+                    Adão Negro se ergue de seu túmulo, pronto para trazer sua
+                    justiça ao mundo moderno.
+                  </p>
+                  <p class="card-text actions">
+                    <a
+                      href="./modal-ver-mais.html"
+                      class="btn btn-primary btn-sm stretched-link"
+                    >
+                      Ver mais
+                      <i class="bi bi-eye"></i>
+                    </a>
+                    <a
+                      href="./editar.html"
+                      class="btn btn-success btn-sm position-relative"
+                    >
+                      Editar
+                      <i class="bi bi-pencil"></i>
+                    </a>
+                    <a href="#" class="btn btn-danger btn-sm position-relative">
+                      Remover
+                      <i class="bi bi-trash"></i>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card bg-dark text-white shadow">
+              <img
+                src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/nib6Eyx8o1fS1awwfVYLALIayF7.jpg"
+                class="card-img"
+                alt="Thor: Amor e Trovão"
+              />
+              <div
+                class="card-img-overlay bg-dark bg-opacity-75 d-flex overflow-hidden"
+              >
+                <div
+                  class="card-contents flex-fill d-flex flex-column justify-content-end"
+                >
+                  <h5 class="card-title">Thor: Amor e Trovão</h5>
+                  <p class="card-text">
+                    Thor parte em uma jornada diferente de tudo que já enfrentou
+                    - uma busca pela paz interior. Mas sua aposentadoria é
+                    interrompida por um assassino galáctico conhecido como Gorr,
+                    o Carniceiro de Deus, que busca a extinção dos deuses. Para
+                    combater a ameaça, Thor pede a ajuda do Rei Valquíria, Korg
+                    e da ex-namorada Jane Foster, que - para surpresa de Thor -
+                    inexplicavelmente empunha seu martelo mágico, Mjolnir, como
+                    o Poderoso Thor.
+                  </p>
+                  <p class="card-text actions">
+                    <a
+                      href="./modal-ver-mais.html"
+                      class="btn btn-primary btn-sm stretched-link"
+                    >
+                      Ver mais
+                      <i class="bi bi-eye"></i>
+                    </a>
+                    <a
+                      href="./editar.html"
+                      class="btn btn-success btn-sm position-relative"
+                    >
+                      Editar
+                      <i class="bi bi-pencil"></i>
+                    </a>
+                    <a href="#" class="btn btn-danger btn-sm position-relative">
+                      Remover
+                      <i class="bi bi-trash"></i>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="fixed-bottom bg-white">
+      <div class="py-2 container border-top">
+        <p class="text-center text-muted">Hero Code &copy; 2022</p>
+      </div>
+    </footer>
+  </body>
+</html>

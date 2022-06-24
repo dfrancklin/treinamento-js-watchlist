@@ -1,0 +1,19 @@
+html,
+body {
+  min-height: 100vh;
+}
+
+.stretched-link ~ a {
+  z-index: 2;
+}
+
+@media (hover: hover) {
+  .card-contents {
+    transform: translateY(50px);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .card:hover .card-contents {
+    transform: translateY(0);
+  }
+}
